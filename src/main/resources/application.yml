@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    platform: oracle
+    url: jdbc:oracle:thin:@192.168.99.100:1521/ORCLPDB1
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: sample
+    password: sample
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+
+flyway:
+  baselineOnMigrate: true
+
+logging:
+  level:
+    org.springframework.core: WARN
